@@ -87,6 +87,15 @@ function initMobileMenu() {
       nav.classList.remove('open');
     });
   });
+  
+  // Close menu on click outside
+  document.addEventListener('click', (e) => {
+    if (!nav.contains(e.target) && !navToggle.contains(e.target) && nav.classList.contains('open')) {
+      navToggle.setAttribute('aria-expanded', 'false');
+      navToggle.classList.remove('open');
+      nav.classList.remove('open');
+    }
+  });
 }
 
 // ==================
