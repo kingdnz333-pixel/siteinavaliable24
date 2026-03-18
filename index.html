@@ -66,13 +66,9 @@
     <div class="container header-inner">
       <a href="/" class="brand">Casa Urbana</a>
       
-      <button class="nav-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <button id="menuBtn" aria-label="Abrir menu">☰ Menu</button>
 
-      <nav class="nav" id="navMenu" aria-label="Menu principal">
+      <nav class="nav" aria-label="Menu principal">
         <ul class="nav-links">
           <li><a href="#services">Serviços</a></li>
           <li><a href="#benefits">Benefícios</a></li>
@@ -83,6 +79,16 @@
       </nav>
     </div>
   </header>
+
+  <nav id="mobileMenu">
+    <a href="#services">Serviços</a>
+    <a href="#benefits">Benefícios</a>
+    <a href="#gallery">Galeria</a>
+    <a href="planos.pdf" target="_blank" rel="noreferrer">Planos</a>
+    <a href="#contact">Agendar visita</a>
+  </nav>
+
+  <div id="overlay"></div>
 
   <!-- Main Content -->
   <main id="main">
