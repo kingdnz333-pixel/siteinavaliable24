@@ -76,7 +76,7 @@ function initMobileMenu() {
     const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
     navToggle.setAttribute('aria-expanded', String(!isOpen));
     navToggle.classList.toggle('open');
-    nav.classList.toggle('open');
+    nav.classList.toggle('active');
   });
   
   // Close menu on nav link click
@@ -84,16 +84,16 @@ function initMobileMenu() {
     link.addEventListener('click', () => {
       navToggle.setAttribute('aria-expanded', 'false');
       navToggle.classList.remove('open');
-      nav.classList.remove('open');
+      nav.classList.remove('active');
     });
   });
   
   // Close menu on click outside
   document.addEventListener('click', (e) => {
-    if (!nav.contains(e.target) && !navToggle.contains(e.target) && nav.classList.contains('open')) {
+    if (!nav.contains(e.target) && !navToggle.contains(e.target) && nav.classList.contains('active')) {
       navToggle.setAttribute('aria-expanded', 'false');
       navToggle.classList.remove('open');
-      nav.classList.remove('open');
+      nav.classList.remove('active');
     }
   });
 }
