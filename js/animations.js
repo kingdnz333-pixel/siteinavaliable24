@@ -67,8 +67,8 @@ function initSmoothScroll() {
 // MOBILE MENU TOGGLE
 // ==================
 function initMobileMenu() {
-  const navToggle = document.querySelector('.nav-toggle');
-  const nav = document.querySelector('.nav');
+  const navToggle = document.getElementById('menuToggle');
+  const nav = document.getElementById('navMenu');
   
   if (!navToggle || !nav) return;
   
