@@ -576,7 +576,7 @@ h3 { font-size: clamp(1.25rem, 2.5vw, 1.75rem); }
 }
 
 .service-card {
-  background: #F5EFE6;
+  background: #F6F8FB;
   padding: var(--spacing-2xl);
   border-radius: var(--radius);
   border: 1px solid var(--color-border);
@@ -637,7 +637,7 @@ h3 { font-size: clamp(1.25rem, 2.5vw, 1.75rem); }
   gap: var(--spacing-lg);
   align-items: flex-start;
   padding: var(--spacing-lg);
-  background: #F5EFE6;
+  background: #F6F8FB;
   border-radius: var(--radius);
   border: 1px solid var(--color-border);
   box-shadow: var(--shadow-sm);
