@@ -124,30 +124,14 @@ function renderGallery() {
     `)
     .join('');
 
-  const galleryMobileHTML = gallery
-    .map(image => `
-      <div class="carousel-item">
-        <img src="${image.src}" alt="${image.alt}" loading="lazy" class="carousel-img">
-        <div class="gallery-overlay">
-          <button class="gallery-btn" aria-label="Ver em tamanho grande" data-src="${image.src}" data-alt="${image.alt}">
-            <span>+</span>
-          </button>
-        </div>
-      </div>
-    `)
-    .join('');
-
   container.innerHTML = `
     <div class="container">
       <div class="section-header">
         <h2 data-reveal>Galeria</h2>
         <p data-reveal>Veja como é trabalhar na Casa Urbana.</p>
       </div>
-      <div class="gallery-grid gallery-pc">
+      <div class="gallery-container">
         ${galleryHTML}
-      </div>
-      <div class="gallery-carousel gallery-mobile">
-        ${galleryMobileHTML}
       </div>
     </div>
   `;
